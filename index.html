@@ -1,9 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Home - My Portfolio</title>
   </head>
-  <body></body>
+  <body class="bebas-neue-regular">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <span class="navbar-brand text-white fw-bold">My Portfolio</span>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="exp.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5 home-profile-flex-section">
+      <div class="profile-flex-container">
+        <div>
+          <img
+            src="img/341180384_962267061627350_5404068213155031097_n.jpg"
+            class="img-profile"
+            alt="Profile Picture"
+          />
+        </div>
+
+        <div class="text-center text-md-start">
+          <h1 class="display-4 mb-3 bebas-neue-heading">Hello, I'm Jean👖</h1>
+          <p class="lead text-muted roboto-text">
+            My name is Darunpob Saengson, and you can call me 'JD'.
+            <br />
+            I am a 19-year-old second-year Computer Engineering student at
+            Chiang Mai University.
+            <br />
+            Pleased to meet you!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5">
+      <h2 class="text-center mb-5 bebas-neue-heading">Skills</h2>
+
+      <div class="d-flex flex-column gap-4">
+        <div class="card skill-card">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100"
+          >
+            <div class="order-md-1 order-2 text-center text-md-start pe-md-4">
+              <h3 class="h4 card-title bebas-neue-heading">Programming</h3>
+              <p class="card-text text-muted roboto-text">
+                I have experience coding in C++ and am further expanding my
+                knowledge in HTML, CSS, and JavaScript⌨️.
+              </p>
+            </div>
+            <div class="order-md-2 order-1 mb-3 mb-md-0">
+              <img
+                src="img/coding.jpg"
+                class="img-fluid rounded skill-img"
+                alt="Programming code on screen"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100"
+          >
+            <div class="order-md-2 order-1 mb-3 mb-md-0 ps-md-4">
+              <img
+                src="img/editng.png"
+                class="img-fluid rounded skill-img"
+                alt="Photo and video editing logos"
+              />
+            </div>
+            <div class="order-md-1 order-2 text-center text-md-start">
+              <h3 class="h4 card-title bebas-neue-heading">Editing</h3>
+              <p class="card-text text-muted roboto-text">
+                I have some experience in both photo and video editing🎬.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card skill-card">
+          <div
+            class="d-flex flex-column flex-md-row align-items-center justify-content-between w-100"
+          >
+            <div class="order-md-1 order-2 text-center text-md-start pe-md-4">
+              <h3 class="h4 card-title bebas-neue-heading">Sports</h3>
+              <p class="card-text text-muted roboto-text">
+                I have a basic proficiency in Taekwondo🥋 and swimming🏊‍♀️.
+              </p>
+            </div>
+            <div class="order-md-2 order-1 mb-3 mb-md-0">
+              <img
+                src="img/sports.png"
+                class="img-fluid rounded skill-img"
+                alt="Taekwondo and swimming"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,232 @@
+.navbar {
+  background-color: #64b5f6;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #270c0c !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.textwlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  gap: 150px;
+}
+
+.img-profile {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin: 20px auto;
+  border: 3px solid #007bff;
+  border-radius: 50%;
+}
+
+.bebas-neue-regular {
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+
+.bebas-neue-heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+}
+
+.contact-link {
+  color: #343a40;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #007bff;
+}
+
+body {
+  font-family: "Bebas Neue", sans-serif;
+  line-height: 1.6;
+  color: #343a40;
+
+}
+
+.roboto-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.home-profile-flex-section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-profile-flex-section .lead {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+}
+
+.profile-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .profile-flex-container {
+    flex-direction: row;
+  }
+}
+
+.gallery-grid {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.gallery-card {
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-card .card-img-top {
+  height: 200px;
+  object-fit: contain;
+  background-color: #f0f0f0;
+}
+
+.gallery-card .card-body {
+  flex-grow: 1;
+}
+
+.gallery-card .card-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+}
+
+.gallery-card .card-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.skill-card {
+  max-width: 620px;
+  margin: 0 auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: #f8f9fa;
+  min-height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+
+.skill-img {
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  flex-shrink: 0;
+  margin-right: 1.5rem;
+}
+
+.experience-section {
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+}
+
+.experience-section .lead {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+}
+
+.champion-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .skill-card {
+    flex-direction: column;
+    text-align: center;
+    min-height: auto;
+    max-width: 95%;
+  }
+
+  .skill-img {
+    width: 100%;
+    height: auto;
+    max-height: 180px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+
+  .skill-card .text-md-start {
+    text-align: center !important;
+  }
+  .skill-card .pe-md-4,
+  .skill-card .ps-md-4 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .gallery-card {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: auto;
+  }
+
+  .contact-info-section .col-12 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .contact-info-section dl dt,
+  .contact-info-section dl dd {
+    text-align: center !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

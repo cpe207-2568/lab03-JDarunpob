@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - My Portfolio</title>
+  </head>
+  <body class="bebas-neue-regular">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <span class="navbar-brand text-white fw-bold">My Portfolio</span>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="exp.html">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white active"
+                aria-current="page"
+                href="gallery.html"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <h1 class="text-center mb-5 bebas-neue-heading">My Gallery</h1>
+
+      <div class="d-flex flex-wrap justify-content-center gap-4 gallery-grid">
+        <div class="card gallery-card">
+          <img
+            src="img/alphaka.jpg"
+            class="card-img-top"
+            alt="Alpaca Farm View"
+          />
+          <div class="card-body">
+            <h5 class="card-title bebas-neue-heading">Alpaca Farm</h5>
+            <p class="card-text text-muted roboto-text">
+              Captured at the Alpaca Farm(ฟาร์มแกะอัลปาก้าม่อนแจ่ม). There are
+              many alpacas and sheep. The weather is very nice, and the view is
+              beautiful.
+            </p>
+          </div>
+        </div>
+
+        <div class="card gallery-card">
+          <img
+            src="img/gf.jpg"
+            class="card-img-top"
+            alt="Photo Booth with Girlfriend"
+          />
+          <div class="card-body">
+            <h5 class="card-title bebas-neue-heading">Girlfriend</h5>
+            <p class="card-text text-muted roboto-text">
+              Try the DOTLSD CITY(photo booth) at Maya, Chiang Mai. Sweet time!
+            </p>
+          </div>
+        </div>
+
+        <div class="card gallery-card">
+          <img src="img/hbd19.jpg" class="card-img-top" alt="Birthday Dinner" />
+          <div class="card-body">
+            <h5 class="card-title bebas-neue-heading">Birthday Dinner</h5>
+            <p class="card-text text-muted roboto-text">
+              My 19th birthday, eating dinner that my girlfriend made for me.
+              Foods were very delicious.
+            </p>
+          </div>
+        </div>
+
+        <div class="card gallery-card">
+          <img
+            src="img/sheep.jpg"
+            class="card-img-top"
+            alt="Huaytuengthao Sheep"
+          />
+          <div class="card-body">
+            <h5 class="card-title bebas-neue-heading">Huaytuengthao Trip</h5>
+            <p class="card-text text-muted roboto-text">
+              Trip to Huaytungtao(ห้วยตึงเฒ่า) to see the sheep and the large
+              open space that is very relaxing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
